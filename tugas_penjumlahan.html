@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Form Penjumlahan</title>
+    </head>
+    <body>
+        <div id="container">
+            <form>
+                <table border="0">
+                    <tr>
+                        <th>Angka1 : <input type="number" placeholder="Masukkan Angka" name="Angka_Pertama" id="Angka_Pertama"></th>
+                    </tr>
+                    <tr>
+                        <th>Angka2 : <input type="number" placeholder="Masukkan Angka" name="Angka_Kedua" id="Angka_Kedua"></th>
+                    </tr>
+                </table>
+            </form>
+            <button onclick="hasil_tambah()">+</button>
+            <button onclick="hasil_kurang()">-</button>
+            <button onclick="hasil_kali()">x</button>
+            <button onclick="hasil_bagi()">/</button>
+            <p>Hasil/Jawaban : <span id="hasil"></span></p>
+        </div>
+        <div id="content">
+            <div id="hasil"></div>
+        </div>
+        <script type="text/javascript">
+            function hasil_tambah(){
+                var Angka1 = parseInt(document.getElementById('Angka_Pertama').value);
+                var Angka2 = parseInt(document.getElementById('Angka_Kedua').value);
+                
+                var hasil = Angka1 + Angka2;
+                console.log(hasil)
+
+                alert(Angka1 + Angka2);
+
+                let result = document.querySelector('#hasil');
+                result.innerHTML = hasil;
+            }
+
+            function hasil_kurang(){
+                var Angka1 = parseInt(document.getElementById('Angka_Pertama').value);
+                var Angka2 = parseInt(document.getElementById('Angka_Kedua').value);
+                
+                var hasil = Angka1 - Angka2;
+                console.log(hasil)
+
+                alert(Angka1 - Angka2);
+
+                let result = document.querySelector('#hasil');
+                result.innerHTML = hasil;
+            }
+
+            function hasil_kali(){
+                var Angka1 = parseInt(document.getElementById('Angka_Pertama').value);
+                var Angka2 = parseInt(document.getElementById('Angka_Kedua').value);
+                
+                var hasil = Angka1 * Angka2;
+                console.log(hasil)
+
+                alert(Angka1 * Angka2);
+
+                let result = document.querySelector('#hasil');
+                result.innerHTML = hasil;
+            }
+
+            function hasil_bagi(){
+                var Angka1 = parseInt(document.getElementById('Angka_Pertama').value);
+                var Angka2 = parseInt(document.getElementById('Angka_Kedua').value);
+                
+                var hasil = Angka1 / Angka2;
+                console.log(hasil)
+
+                alert(Angka1 / Angka2);
+
+                let result = document.querySelector('#hasil');
+                result.innerHTML = hasil;
+            }
+        </script>
+    </body>
+</html>

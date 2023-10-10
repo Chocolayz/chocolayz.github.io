@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas Form</title>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <table border="0">
+                <tr>
+                    <th>Nama: <input type="text" placeholder="Isi Nama" name="data_nama" id="data_nama"></th>
+                </tr>
+                <tr>
+                    <th>Kelas: <input type="number" placeholder="Isi Nomor Kelas" name="data_kelas" id="data_kelas"></th>
+                </tr>
+                <tr>
+                    <th>Umur: <input type="number" placeholder="Isi Umur" name="data_umur" id="data_umur"></th>
+                </tr>
+                <tr>
+                    <th>Hobi: <input type="text" placeholder="Isi Hobi" name="data_hobi" id="data_hobi"></th>
+                </tr>
+            </table>
+        </form>
+        <button onclick="tampildata()">Konfirmasi</button>
+    </div>
+    <div id="content">
+        <div id="hasil_nama"></div>
+        <div id="hasil_kelas"></div>
+        <div id="hasil_umur"></div>
+        <div id="hasil_hobi"></div>
+    </div>
+    <script type="text/javascript">
+        function tampildata() {
+            var Nama = document.getElementById('data_nama').value;
+            var Kelas = document.getElementById('data_kelas').value;
+            var Umur = document.getElementById('data_umur').value;
+            var Hobi = document.getElementById('data_hobi').value;
+            console.log(Nama);
+            console.log(Kelas);
+            console.log(Umur);
+            console.log(Hobi);
+
+            alert("Nama : " + Nama + "\nKelas : " + "\nUmur : " + Umur + "\nHobi : " + Hobi);
+
+            document.getElementById('hasil_nama').innerHTML = Nama;
+            document.getElementById('hasil_kelas').innerHTML = Kelas;
+            document.getElementById('hasil_umur').innerHTML = Umur;
+            document.getElementById('hasil_hobi').innerHTML = Hobi;
+        }
+    </script>
+</body>
+</html>
