@@ -1,0 +1,41 @@
+<html>
+    <head><title>Home</title></head>
+    <body>
+        <table border="4">
+            <tr>
+                <th><a href="home.html">Home  </a></th>
+                <th><a href="gallery.html">Gallery  </a></th>
+                <th><a href="aboutme.html">About Me  </a></th>
+                <th><a href="contact.html">Contact  </a></th>
+            </tr>
+        </table>
+        <h1>Contact Me</h1>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Input Nama" id="Nama"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>:</td>
+                <td><input type="text" placeholder="Input Email" id="Email"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>:</td>
+                <td><textarea name="" id="text_place" cols="20" rows="5" placeholder="Masukkan Deskripsimu"></textarea></td>
+            </tr>
+        </table>
+        <button onclick="tampilan()">Kirim</button>
+        <script>
+            function tampilan(){
+                var Nama = document.getElementById("Nama").value;
+                var Email = document.getElementById("Email").value;
+                var Description = document.getElementById("text_place").value;
+
+                alert("Nama : "+ Nama + "\nEmail : "+ Email + "\nDescripton : "+ Description)
+            }
+        </script>
+    </body>
+</html>
