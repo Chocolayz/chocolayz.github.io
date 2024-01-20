@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif,sans-serif;
+    justify-content: center;
+    height: 100vh;
+    background: url('anjay.gif') center repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    padding: 3px;
+}
+
+nav {
+    overflow: auto;
+    background: url('cloud.gif');
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: margin-bottom;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+.center-text {
+    text-align: center;
+    border: 3px solid rgb(11, 11, 11);
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    background-color: rgb(138, 134, 134);
+    color: lightblue;
+}
