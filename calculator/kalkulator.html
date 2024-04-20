@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Symbol Calculator</title>
+<link rel="stylesheet" href="kalkulator.css">
+</head>
+<body>
+<div class="calculator">
+    <p id="resultAbove"></p> <!-- Elemen untuk menampilkan hasil di atas text box -->
+    <input type="text" id="expression" placeholder="Enter Number" pattern="[0-9]*" oninput="validateInput(this)">
+    <button onclick="clearExpression()" class="clear">C</button>
+    <button onclick="addToExpression('%')">%</button>
+    <button onclick="addToExpression('/')">÷</button>
+    <button onclick="backspace()">←</button>
+    <br>
+    <button onclick="addToExpression('7')">7</button>
+    <button onclick="addToExpression('8')">8</button>
+    <button onclick="addToExpression('9')">9</button>
+    <button onclick="addToExpression('*')">x</button>
+    <br>
+    <button onclick="addToExpression('4')">4</button>
+    <button onclick="addToExpression('5')">5</button>
+    <button onclick="addToExpression('6')">6</button>
+    <button onclick="addToExpression('-')">-</button>
+    <br>
+    <button onclick="addToExpression('1')">1</button>
+    <button onclick="addToExpression('2')">2</button>
+    <button onclick="addToExpression('3')">3</button>
+    <button onclick="addToExpression('+')">+</button>
+    <button onclick="addToExpression('0')">0</button>
+    <button onclick="addToExpression('00')">00</button>
+    <button onclick="addToExpression('.')">.</button>
+    <button onclick="calculate()" class="equal">=</button>
+</div>
+
+<script src="kalkulator.js"></script>
+</body>
+</html>
